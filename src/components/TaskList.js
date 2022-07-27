@@ -2,7 +2,7 @@ import React, {useState, useEffect} from "react";
 import Container from "./Container";
 import Table from "./Table";
 
-function Tracker(){
+function TaskList(){
 	const[action, setAction] = useState([]);
 	useEffect(() => {
 		fetch("https://edutrackapi.herokuapp.com/actionItem")
@@ -14,6 +14,7 @@ function Tracker(){
 	return(
 		<Container>
 			<div className="table">
+				<h1>ACTION ITEMS</h1>
 				<Table action={action}/>
 			</div>
 		</Container>
@@ -21,4 +22,4 @@ function Tracker(){
 	)
 }
 
-export default Tracker;
+export default TaskList;

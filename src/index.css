@@ -16,38 +16,52 @@ code {
   box-sizing: border-box;
 }
 nav{
-  width: 70%;
+  width: 100%;
+  background-color:rgb(185, 224, 224);
+  height: 40px;
+  padding-top: 10px;
 }
 
  nav a{
   margin-left: 30px;
   text-decoration: none;
+  color: rgb(14, 13, 13);
 }
 
-nav a:hover{
+nav a:hover,
+.contact-button:hover
+{
   padding:5px;
   background-color: antiquewhite;
   border-radius: 5px;
 }
-nav:active{
-  color:red;
+nav a:active{
+  background-color:red;
 }
 
 .nav-button-container{
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin-top: 10px;
 }
 
 form{
   border: solid grey;
   border-radius: 5px;
-  width: 26vw;
+  width: 60vw;
+}
+
+.newtask-form{
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  text-align: center;
 }
  .form{
   display: flex;
   flex-direction: column;
-  width:25vw;
+  width:59vw;
   border-bottom: solid black;
   border-radius: 5px;
   margin: auto;
@@ -59,7 +73,10 @@ label,button{
   color: white;
   background-color: black;
 }
-
+button.submit{
+  width: 25%;
+  margin: auto;
+}
 button{
   border-radius: 5px;
 }
@@ -71,15 +88,9 @@ button:hover{
 }
 
 .side-bar{
-  background-color: rgb(250, 220, 215);
   height: 100vh;
+  width: 20vw;
 }
-
-.main-home-content{
-  height: 100vh;
-  width: 75vw;
-}
-
 .wrap-home{
   display: flex;
   margin-top: 10px;
@@ -100,11 +111,33 @@ th{
 .landing{
   width: 50vw;
   height: 100vh;
-  background-color: red;
+  background-color: rgb(203, 185, 185);
 }
 
 .table{
 display: flex;
-justify-content: center;
+flex-direction: column;
+align-items: center;
 margin-top: 50px;
+}
+
+.App{
+  overflow: scroll;
+}
+
+.contact-button{
+  width: 100px;
+  height: 30px;
+  background-color: aquamarine;
+  border:none;
+  border-radius: 5px;
+  margin-top: 80px;
+  text-align: center;
+  padding-top: 6px;
+  margin-left: 15px;
+}
+
+span{
+  color: red;
+  font-weight: 900;
 }

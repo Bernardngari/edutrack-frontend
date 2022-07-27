@@ -4,8 +4,8 @@ function Navbar(){
 	return(
 		<nav>
 				<NavLink to="/">Home</NavLink>
-				<NavLink to="/tracker">Tracker</NavLink>
-				<NavLink to="/contact">Contact</NavLink>
+				<NavLink to="/tasklist">TaskList</NavLink>
+				<NavLink to="/newtask">New Task</NavLink>
 		</nav>
 	)
 }

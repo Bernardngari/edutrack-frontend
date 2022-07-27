@@ -11,7 +11,7 @@ function Table({action}){
 							<td>{item.topic}</td>
 							<td>{item.completion}</td>
 							<td>{item.priority}</td>
-							<td>{item.url}</td>
+							<td><a target="_blank "href={item.url}>{item.url}</a></td>
 							<td><button>Update</button></td>
 							<td><button>Delete</button></td>
 				</tr>
