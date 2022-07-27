@@ -1,5 +1,6 @@
 import React from "react";
 import Container from "./Container";
+import Tracker from "./Tracker";
 
 function Home(){
 	return(
@@ -8,11 +9,11 @@ function Home(){
 						<div className="side-bar">
 							<form>
 								<div className="form">
-										<label for="task">Create new task</label>
+										<label htmlFor="task">Create new task</label>
 										<input type="text" placeholder="Enter new study topic" required/>
 								</div>
 								<div className="form">
-									<label for="completion">Completion</label>
+									<label htmlFor="task">Completion</label>
 									<select>
 										< option value="Not started">Not Started</option >
 										< option value="WIP">WIP</option >
@@ -35,7 +36,9 @@ function Home(){
 								</div>
 							</form>
 						</div>
-						<div className="main-home-content">home main content</div>
+						<div className="main-home-content">
+							<Tracker />
+						</div>
 			</div>
 			
 		</Container>
