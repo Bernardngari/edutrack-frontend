@@ -1,16 +1,8 @@
-import React, {useState, useEffect} from "react";
+import React from "react";
 import Container from "./Container";
 import Table from "./Table";
 
-function TaskList(){
-	const[action, setAction] = useState([]);
-	useEffect(() => {
-		fetch("https://edutrackapi.herokuapp.com/actionItem")
-		.then(r => r.json())
-		.then((data) => setAction(data))
-	},[])
-
-	console.log(action);
+function TaskList({action}){
 	return(
 		<Container>
 			<div className="table">
