@@ -4,7 +4,7 @@ import Container from "./Container";
 function Home(){
 	return(
 		<Container>
-			<div  classname="wrap-home">
+			<div  className="wrap-home">
 						<div className="side-bar">
 							<form>
 								<div className="form">
@@ -33,10 +33,6 @@ function Home(){
 								<div className="form">
 									<button type="submit">Submit</button>
 								</div>
-								
-								
-
-
 							</form>
 						</div>
 						<div className="main-home-content">home main content</div>
