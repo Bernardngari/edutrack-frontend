@@ -1,5 +1,6 @@
 import React from "react";
-import Container from "./Container";
+//import Container from "./Container";
+import "../index.css"
 
 function Table({action}){
 
@@ -14,11 +15,8 @@ function Table({action}){
 							<td><button>Update</button></td>
 							<td><button>Delete</button></td>
 				</tr>
-				
-				
 			</React.Fragment>
 		)
-
 })
 	return(
 		<React.Fragment>
@@ -37,7 +35,6 @@ function Table({action}){
 			</table>
 		</React.Fragment>
 	)
-
 }
 
 export default Table;

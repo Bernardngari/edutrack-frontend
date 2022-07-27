@@ -11,11 +11,9 @@ function Tracker(){
 	},[])
 
 	console.log(action);
-
-
 	return(
 		<Container>
-			<div>
+			<div className="table">
 				<Table action={action}/>
 			</div>
 		</Container>

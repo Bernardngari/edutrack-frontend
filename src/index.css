@@ -29,7 +29,7 @@ nav a:hover{
   background-color: antiquewhite;
   border-radius: 5px;
 }
-nav a:active{
+nav:active{
   color:red;
 }
 
@@ -76,7 +76,6 @@ button:hover{
 }
 
 .main-home-content{
-  background-color: red;
   height: 100vh;
   width: 75vw;
 }
@@ -84,4 +83,28 @@ button:hover{
 .wrap-home{
   display: flex;
   margin-top: 10px;
+}
+
+table,thead,tr,th,td{
+  border:2px solid black;
+  border-collapse: collapse;
+}
+
+th{
+  font-weight: 900;
+  font-style: oblique;
+  color: white;
+  background-color: black;
+}
+
+.landing{
+  width: 50vw;
+  height: 100vh;
+  background-color: red;
+}
+
+.table{
+display: flex;
+justify-content: center;
+margin-top: 50px;
 }
