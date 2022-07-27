@@ -34,6 +34,7 @@ nav a:hover,
   padding:5px;
   background-color: antiquewhite;
   border-radius: 5px;
+  color: red;
 }
 nav a:active{
   background-color:red;
@@ -110,8 +111,16 @@ th{
 
 .landing{
   width: 50vw;
-  height: 100vh;
-  background-color: rgb(203, 185, 185);
+  height: 70vh;
+  background-color: antiquewhite;
+  border-radius: 5px;
+  line-height: 60px;
+  font-size: x-large;
+  font-style: italic;
+  font-weight: 900;
+  overflow: scroll;
+  margin-top: 50px;
+  margin-left: 40px;
 }
 
 .table{
@@ -128,16 +137,22 @@ margin-top: 50px;
 .contact-button{
   width: 100px;
   height: 30px;
-  background-color: aquamarine;
+  background-color: black;
+  color: antiquewhite;
   border:none;
+  border-right: solid grey;
   border-radius: 5px;
   margin-top: 80px;
   text-align: center;
   padding-top: 6px;
-  margin-left: 15px;
+  margin-left:80px;
 }
 
 span{
   color: red;
   font-weight: 900;
 }
+
+
+
+
