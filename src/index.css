@@ -15,3 +15,53 @@ code {
 *{
   box-sizing: border-box;
 }
+nav{
+  width: 70%;
+}
+
+ nav a{
+  margin-left: 30px;
+  text-decoration: none;
+}
+
+nav a:hover{
+  padding:5px;
+  background-color: antiquewhite;
+  border-radius: 5px;
+}
+nav a:active{
+  color:red;
+}
+
+.nav-button-container{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+form{
+  border: solid grey;
+  border-radius: 5px;
+  width: 26vw;
+}
+ .form{
+  display: flex;
+  flex-direction: column;
+  width:25vw;
+  border-bottom: solid black;
+  border-radius: 5px;
+  margin: auto;
+  margin-bottom: 10px;
+ }
+label,button{
+  font-weight: 900;
+  font-style: oblique;
+  color: white;
+  background-color: black;
+}
+
+button:hover{
+  color:black;
+  background-color: rgb(185, 224, 224);
+  
+}
