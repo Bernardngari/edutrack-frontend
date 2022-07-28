@@ -13,13 +13,30 @@ function App() {
 	}
 
   const[action, setAction] = useState([]);
+  const[onDelete, setOnDelete] = useState(true)
 	useEffect(() => {
 		fetch("https://edutrackapi.herokuapp.com/actionItem")
-		.then(r => r.json())
-		.then((data) => setAction(data))
-	},[])
+    .then(r=>r.json())
+    .then(data=>setAction(data))
+	},[onDelete])
+  
   function onAddTask(task){
-    setAction([...action, task])
+  fetch("https://edutrackapi.herokuapp.com/actionItem",{
+    method :"POST",
+    headers:{
+      "Content-Type":"application/json"
+    },
+    body: JSON.stringify(task)
+  })
+  .then(r=>r.json())
+  .then(newItem=>setAction([...action, newItem]))
+  }
+
+  function persistDel(deletedItem){
+    console.log(deletedItem.id);
+    const newList = action.filter(item=> item.id !==deletedItem.id)
+    setAction(newList)
+     setOnDelete(()=>!onDelete)
   }
 
   return (
@@ -32,7 +49,7 @@ function App() {
       </Container>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/tasklist" element={<TaskList action={action}/>} />
+        <Route path="/tasklist" element={<TaskList action={action} persistDel={persistDel}/>} />
         <Route path="/newtask" element={<NewTask onAddTask={onAddTask}/>} />
       </Routes>
     </div>

@@ -26,17 +26,19 @@ function NewTask({onAddTask}){
 								</div>
 								<div className="form">
 									<label htmlFor="task">Completion</label>
-									<select onChange={onFormChange} name="completion">
-										< option value="Not started">Not Started</option >
-										< option value="WIP">WIP</option >
-										< option value="Completed">Completed</option > 
+									<select onChange={onFormChange} name="completion" defaultValue={"Choose one option"}>
+										<option value={"Choose one option"} disabled>Choose one option</option>
+										< option value={"Not started"}>Not Started</option >
+										< option value={"WIP"}>WIP</option >
+										< option value={"Completed"}>Completed</option > 
 									</select>
 								</div>
 								<div className="form">
 									<label>Task Priority</label>
-									<select onChange={onFormChange} name="priority">
-										< option value="low" label="low"></ option >
-										< option value="high" label="high"></option >
+									<select onChange={onFormChange} name="priority" defaultValue={"Choose one option"}>
+										<option value={"Choose one option"} disabled>Choose one option</option>
+										< option value={"low"} label="low"></ option >
+										< option value={"high"} label="high"></option >
 									</select>
 								</div>
 								<div className="form">
