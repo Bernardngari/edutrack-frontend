@@ -36,8 +36,16 @@ nav a:hover,
   border-radius: 5px;
   color: red;
 }
-nav a:active{
-  background-color:red;
+nav a.active{
+  padding:5px;
+  font-weight: 900;
+  background-color: antiquewhite;
+  border-radius: 5px;
+  color: red;
+}
+
+a{
+  text-decoration: none;
 }
 
 .nav-button-container{
@@ -138,7 +146,6 @@ margin-top: 50px;
 
 .App{
   overflow: scroll;
-  background-image: url(https://www.timecamp.com/blog/wp-content/uploads/2021/04/study-time-tracker-header-min.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -163,6 +170,9 @@ span{
   color: red;
   font-weight: 900;
 }
+
+
+
 
 
 
