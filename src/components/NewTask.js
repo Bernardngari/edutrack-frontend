@@ -20,7 +20,7 @@ function NewTask({onAddTask}){
 		completion:"",
 		priority:"",
 		url:""
-	}),2000)
+	}),1000)
 	}
 							return <Container>
 								<div className="newtask-form">

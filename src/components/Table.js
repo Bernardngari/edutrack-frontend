@@ -1,10 +1,7 @@
 import React, {useState, useEffect}from "react";
 //import Container from "./Container";
 import "../index.css"
-
 function Table({action,onDeleteItem}){
-	const[obj, setObj] = useState({action});
-	
 	function onClick(e){
 		let verb= e.target.name;
 		let id = e.target.id;
@@ -14,13 +11,11 @@ function Table({action,onDeleteItem}){
 			headers: {
 				"Content-Type":"application/json"
 			},
-			body: JSON.stringify(obj)
+			body: JSON.stringify()
 		})
 		.then(r => r.json())
 		.then(deletedItem=> onDeleteItem(deletedItem))
 	}
-
-
 	const tableRow = action.map((item) => {
 		return (
 			<React.Fragment key={item.id}>
@@ -44,6 +39,8 @@ function Table({action,onDeleteItem}){
 						<th>Completion</th>
 						<th>Priority</th>
 						<th>URL</th>
+						<th>Update</th>
+						<th>Delete</th>
 					</tr>
 				</thead>
 				<tbody>
@@ -53,5 +50,4 @@ function Table({action,onDeleteItem}){
 		</React.Fragment>
 	)
 }
-
 export default Table;

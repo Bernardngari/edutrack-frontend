@@ -6,7 +6,7 @@ import Home from "./components/Home";
 import TaskList from "./components/TaskList";
 import NewTask from "./components/NewTask";
 
-function App() {
+function App(){
   const[dark, setDark] = useState(false);
   function handleDarkToggle(){
 		setDark((dark) => !dark)
@@ -38,7 +38,6 @@ function App() {
     setAction(newList)
      setOnDelete(()=>!onDelete)
   }
-
   return (
     <div className="App">
       <Container>

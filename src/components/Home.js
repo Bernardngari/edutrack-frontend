@@ -1,8 +1,6 @@
 import React from "react";
 import Container from "./Container";
-//import Form from "./NewTask";
 import LandingPage from "./Landingpagetexts";
-
 function Home(){
 	return(
 		<Container>
