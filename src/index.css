@@ -112,6 +112,7 @@ th{
   font-style: oblique;
   color: white;
   background-color: black;
+  border-right: solid white 2px;
 }
 
 .landing{
@@ -137,6 +138,11 @@ margin-top: 50px;
 
 .App{
   overflow: scroll;
+  background-image: url(https://www.timecamp.com/blog/wp-content/uploads/2021/04/study-time-tracker-header-min.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
 }
 
 .contact-button{

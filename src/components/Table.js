@@ -20,7 +20,6 @@ function Table({action,onDeleteItem}){
 		.then(deletedItem=> onDeleteItem(deletedItem))
 	}
 
-	console.log(obj);
 
 	const tableRow = action.map((item) => {
 		return (

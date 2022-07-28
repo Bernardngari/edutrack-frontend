@@ -8,13 +8,13 @@ function Home(){
 		<Container>
 			<div  className="wrap-home">
 					<div className="side-bar">
-							<Container><div className="contact-button">Email</div></Container>
+							<Container><a target="_blank" href="mailto:bernardngari.ke@gmail.com"><div className="contact-button">Email</div></a></Container>
 							<hr/>
-							<Container><div className="contact-button">Tweet</div></Container>
+							<Container><a target="_blank" href="https://www.linkedin.com/in/bernardngari/"><div className="contact-button">LinkedIn</div></a></Container>
 							<hr/>
-							<Container><div className="contact-button">WhatsApp</div></Container>
+							<Container><a target="_blank" href="https://wa.me/+254700208172"><div className="contact-button">WhatsApp</div></a></Container>
 							<hr/>
-							<Container><div className="contact-button">Direct Call</div></Container>
+							<Container><a target="_blank" href="tel:+254700208172"><div className="contact-button">Direct Call</div></a></Container>
 							<hr/>
 					</div>
 						<div className="main-home-content">
