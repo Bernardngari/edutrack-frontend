@@ -11,13 +11,16 @@ function App() {
   function handleDarkToggle(){
 		setDark((dark) => !dark)
 	}
-  
+
   const[action, setAction] = useState([]);
 	useEffect(() => {
 		fetch("https://edutrackapi.herokuapp.com/actionItem")
 		.then(r => r.json())
 		.then((data) => setAction(data))
 	},[])
+  function onAddTask(task){
+    setAction([...action, task])
+  }
 
   return (
     <div className="App">
@@ -30,7 +33,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/tasklist" element={<TaskList action={action}/>} />
-        <Route path="/newtask" element={<NewTask />} />
+        <Route path="/newtask" element={<NewTask onAddTask={onAddTask}/>} />
       </Routes>
     </div>
   );

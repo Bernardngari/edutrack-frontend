@@ -1,7 +1,7 @@
 import Container from "./Container";
 import React,{useState} from "react";
 
-function NewTask(){
+function NewTask({onAddTask}){
 	const[formdata, setFormData] = useState({
 		topic:"",
 		completion:"",
@@ -14,10 +14,9 @@ function NewTask(){
 
 	function handleSubmit(e){
 		e.preventDefault();
-		console.log(formdata);
-
+		//console.log(formdata);
+		onAddTask(formdata)
 	}
-
 							return <Container>
 								<div className="newtask-form">
 									<form onSubmit={handleSubmit}>
@@ -30,7 +29,7 @@ function NewTask(){
 									<select onChange={onFormChange} name="completion">
 										< option value="Not started">Not Started</option >
 										< option value="WIP">WIP</option >
-										< option value="Completed">Completed</option >
+										< option value="Completed">Completed</option > 
 									</select>
 								</div>
 								<div className="form">
