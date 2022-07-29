@@ -46,8 +46,8 @@ function App(){
         </div>
       </Container>
       <Container>
-        <div className="button-container">
-          <button onClick={handleDarkToggle}>{dark? "DARK":"LIGHT"} MODE</button>
+        <div className="button-container" onClick={handleDarkToggle} >
+          <div>{dark? "DARK":"LIGHT"}</div>
         </div>
       </Container>
       <Routes>
