@@ -41,8 +41,12 @@ function App(){
   return (
     <div className="App">
       <Container>
-        <div className="nav-button-container">
+        <div className="nav-container">
           <Navbar />
+        </div>
+      </Container>
+      <Container>
+        <div className="button-container">
           <button onClick={handleDarkToggle}>{dark? "DARK":"LIGHT"} MODE</button>
         </div>
       </Container>

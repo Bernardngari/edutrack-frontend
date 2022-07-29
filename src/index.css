@@ -16,14 +16,16 @@ code {
   box-sizing: border-box;
 }
 nav{
-  width: 100%;
+  width: 50vw;
   background-color:rgb(185, 224, 224);
-  height: 40px;
-  padding-top: 10px;
+  height: 60px;
+  padding-top: 15px;
+  font-size: 25px;
+  font-weight: 900;
 }
 
  nav a{
-  margin-left: 30px;
+  margin-left: 150px;
   text-decoration: none;
   color: rgb(14, 13, 13);
 }
@@ -48,12 +50,12 @@ a{
   text-decoration: none;
 }
 
-.nav-button-container{
+.nav-container{
   display: flex;
   justify-content:center;
   align-items: center;
   width: 100vw;
-
+ background-color:rgb(185, 224, 224);
 }
 
 form{
@@ -80,8 +82,11 @@ form{
 label,button{
   font-weight: 900;
   font-style: oblique;
-  color: white;
-  background-color: black;
+  color: rgb(0, 0, 0);
+  background-color:antiquewhite;
+}
+label,input,select,button.submit{
+  font-size: 25px;
 }
 button.submit{
   width: 25%;
@@ -119,7 +124,7 @@ th{
   font-weight: 900;
   font-style: oblique;
   color: white;
-  background-color: rgb(175, 159, 159);
+  background-color: rgb(28, 11, 11);
   border-right: solid white 2px;
 }
 
@@ -170,6 +175,18 @@ width: 100vw;
 span{
   color: red;
   font-weight: 900;
+}
+.action{
+  font-size: 25px;
+}
+
+.button-container{
+  height: 50px;
+  width: 50px;
+  margin-left:100px;
+  margin-bottom: -60px;
+  border-radius: 50%;
+
 }
 
 

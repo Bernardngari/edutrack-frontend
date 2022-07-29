@@ -24,8 +24,8 @@ function Table({action,onDeleteItem}){
 							<td>{item.completion}</td>
 							<td>{item.priority}</td>
 							<td><a target="_blank "href={item.url}>{item.url}</a></td>
-							<td><button onClick={onClick}name="PATCH" id={item.id}>Update</button></td>
-							<td><button onClick={onClick} name="DELETE" id={item.id}>Delete</button></td>
+							<td><button  className="action" onClick={onClick}name="PATCH" id={item.id}>Update</button></td>
+							<td><button  className="action" onClick={onClick} name="DELETE" id={item.id}>Delete</button></td>
 				</tr>
 			</React.Fragment>
 		)
