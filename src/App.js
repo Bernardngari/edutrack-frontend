@@ -7,11 +7,6 @@ import TaskList from "./components/TaskList";
 import NewTask from "./components/NewTask";
 
 function App(){
-  const[dark, setDark] = useState(false);
-  function handleDarkToggle(){
-		setDark((dark) => !dark)
-	}
-
   const[action, setAction] = useState([]);
   const[onDelete, setOnDelete] = useState(true)
 	useEffect(() => {
@@ -43,11 +38,6 @@ function App(){
       <Container>
         <div className="nav-container">
           <Navbar />
-        </div>
-      </Container>
-      <Container>
-        <div className="button-container" onClick={handleDarkToggle} >
-          <div>{dark? "DARK":"LIGHT"}</div>
         </div>
       </Container>
       <Routes>

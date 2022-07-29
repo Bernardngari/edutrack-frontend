@@ -3,8 +3,9 @@ function LandingPage(){
 	return(
 		<Container>
 			<div className="landing">
+					<h1>EduTrack</h1>
 					<p>
-									<b>W</b>elcome to <span>eduTrack</span>, the web provision that enables you to  track 	your study action items easier.
+										Welcome to eduTrack the web provision that enables you to  track 	your study action items easier.
 										There has never been an easier way to save your action items and monitor progress.
 										Do you recall a moment when you found a link to an intriguing site but promptly forgot it?
 										It is now possible to save that for later and update the completion status as you action.
