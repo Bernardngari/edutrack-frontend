@@ -18,13 +18,11 @@ function Home(){
 							<Container><a target="_blank" href="https://wa.me/+254700208172"><div className="contact-button">WhatsApp</div></a></Container>
 							<hr/>
 							<Container><a target="_blank" href="tel:+254700208172"><div className="contact-button">Direct Call</div></a></Container>
-							<hr/>
-							<Container>
-								<h3>THEME:</h3>
-        <div className="button-container" onClick={handleDarkToggle} >
-          <div>{dark? "DARK":"LIGHT"}</div>
-        </div>
-      </Container>
+							{/*<Container>*/}
+        {/*<div className="button-container" onClick={handleDarkToggle} >*/}
+          {/*<div>{dark? "DARK":"LIGHT"}</div>*/}
+        {/*</div>*/}
+      {/*</Container>*/}
 					</div>
 						<div className="main-home-content">
 							<LandingPage />
