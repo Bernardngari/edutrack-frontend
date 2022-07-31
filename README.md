@@ -3,6 +3,14 @@
 ## Developed by:
     Bernard Ngari
 
+## Landing Page
+![image](./src/images/Landing.png)
+## New Task Page
+![image](./src/images/NewTaskForm.png)
+## Task Page
+![image](./src/images/Taskpage.png)
+
+
 ## Table Of Content
 
 + [Description](#Description)
