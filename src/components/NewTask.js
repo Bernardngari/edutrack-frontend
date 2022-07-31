@@ -2,6 +2,7 @@ import Container from "./Container";
 import React,{useState} from "react";
 
 function NewTask({onAddTask}){
+	const [choice, setChoice] = useState("Not started")
 	const[formdata, setFormData] = useState({
 		topic:"",
 		completion:"",
@@ -31,8 +32,8 @@ function NewTask({onAddTask}){
 								</div>
 								<div className="form">
 									<label htmlFor="task">Completion</label>
-									<select onChange={onFormChange} name="completion" defaultValue={"Choose one option"} required value={formdata.completion}>
-										<option value={"Choose one option"} disabled>Choose one option</option>
+									<select name="completion" value={choice} required onChange={(e)=>setChoice(e.target.value)}>
+										{/*<option value={"Choose one option"} disabled>Choose one option</option>*/}
 										< option value={"Not started"}>Not Started</option >
 										< option value={"WIP"}>WIP</option >
 										< option value={"Completed"}>Completed</option > 
