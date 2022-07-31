@@ -24,7 +24,7 @@ function App(){
     body: JSON.stringify(task)
   })
   .then(r=>r.json())
-  .then(newItem=>setAction([...action, newItem]))
+  .then(newItem=>setAction([...action, newItem].reverse()))
   }
 
   function persistDel(deletedItem){
