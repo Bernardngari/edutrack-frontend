@@ -216,7 +216,9 @@ span{
   margin-left: 75px;
   font-size: 25px;
 }
-
+/*tr :nth-child(even){
+  background-color: red;
+}*/
 
 
 

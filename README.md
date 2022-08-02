@@ -19,6 +19,7 @@
 + [Installation-process](#Installation-process)
 + [Technologies-used](#Technologies-used)
 + [Live-Link](#Live-Link)
++ [Project-Backend](#Project-backend)
 + [License](#License)
 + [Authors-info](#Authors-info)
 
@@ -45,6 +46,9 @@ If you wish to clone and experiment with some features, you clone [here](https:/
 
 ## Live-Link
 The app is hosted on Heroku at this [link](https://edutrack.herokuapp.com/)
+
+## Project-backend
+The project's backend is hosted on [Heroku](https://edutrackapi.herokuapp.com/actionItem)
 
 
 
